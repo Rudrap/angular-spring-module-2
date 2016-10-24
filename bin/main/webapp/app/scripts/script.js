@@ -14,8 +14,8 @@ app.controller("recapCtrl",
 		function($scope, vcRecaptchaService, sessionService) {
 			var vm = this;
 			vm.signup = function() {
-				if (vcRecaptchaService.getResponse() === "") { // if string is
-																// empty
+				if (vcRecaptchaService.getResponse() === "") { // if string is empty
+																
 					alert("Please resolve the captcha and submit!")
 				} else {
 					alert(vcRecaptchaService.getResponse());
